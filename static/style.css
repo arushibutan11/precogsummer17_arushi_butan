@@ -1,0 +1,246 @@
+
+.hidden>div {
+    display:none;
+}
+
+.visible>div {
+    display:block;
+} 
+
+	#1, #2, #3, #4, #5, #6 {
+		margin-top: 30px;
+		margin-bottom: 10px; }
+	
+html,body{min-height:100%;}
+a#but {
+    cursor: default;
+}
+ul#navi {
+    position: relative;
+    float: left;
+}
+#analysis a:hover, a:focus {
+    color: #85c79a;
+    font-size: 15px;
+	text-decoration:none;
+}
+a {
+    color: #12335d;
+}
+
+h1 {color: #b10909;
+    display: block;
+    font-size: 3em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+h2 {
+	font-size: 1.8em;
+}
+h3 {
+	font-size: 1.6em;
+}
+#headr h1 {
+	margin-top: 8px;
+	margin-bottom: 15px;
+	font-size: 3em;
+}
+#map {
+	display: inline;
+}
+
+#Centred { 
+	text-align:center; }
+
+#whichState {
+	display: inline;
+	position: relative;
+	top: -350px;
+}
+body {
+	font-family: 'Merriweather Sans', sans-serif;
+	margin: 0;
+}
+
+ul,p {
+	text-align: left; }
+
+#analysis {
+	padding-left:10px;
+	margin-top:15px;
+	text-align: center;
+	width: 70%;
+    padding-top: 0.1px;
+    background-color: #3588ec;
+	color: #fff;
+	border-radius: 3px;
+	margin: auto;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+
+}
+
+#anhead {
+	position: relative;
+	top: -10px;
+	padding-top: 10px;
+	
+}
+#content
+{
+	text-align: center;
+    background-color: #ffffff;
+	padding-top: 10px;
+}
+.point {
+position:fixed;
+display:none;
+padding:10px 15px;
+background:#f2f2f2;
+font-size:14px;
+font-weight:bold;
+border:1px solid #262626;
+
+-moz-border-radius: 4px; /* FF1-3.6 */
+-webkit-border-radius: 4px; /* Saf3-4, iOS 1-3.2, Android <1.6 */
+ border-radius: 4px 4px 4px 4px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */    
+/* useful if you don't want a bg color from leaking outside the border: */        
+-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+#but {
+    background-color: rgb(68, 166, 171);
+    border: none;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6em;
+	margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+	border-radius:10px;
+}
+#but:hover{
+  color: #f9f9f9;
+  background: #455162;
+}
+#map
+{
+
+	position: relative;
+	left: 20px;
+}
+
+
+#statehead {
+  background: rgb(68, 166, 171);
+  padding: 12px;
+  color: #fff;
+  display: block;
+  margin-left: 80px;
+  margin-top: 0;
+  margin-bottom:0px;
+  position:fixed;
+  z-index:9998;
+  width:100%;
+  font-family:'Merriweather Sans';
+}
+.tablink ul {
+    list-style-type: none;
+    margin: 0;
+	padding-left:0.01px;
+	padding-top:30px;
+    width: 19%;
+    background-color: #91c0f3;
+    height: 100%; /* Full height */
+    position: fixed;
+	z-index:9999;	/* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+	font-family:'Merriweather Sans';
+	
+}
+
+
+.tablink li a {
+    display: block;
+    color: #f9f9f9;
+	text-align: center;
+	padding-top: 20px;
+    padding-bottom: 20px;
+	
+    text-decoration: none;
+	
+}
+
+/* Change the link color to #111 (black) on hover */
+
+
+
+.tablink .act a{
+    background-color: #fff;
+    color: #e01515;
+	font-weight: bold;
+}
+.tablink li a:hover{
+       background-color: #364d61;
+
+    color: #f2f2f2;
+}
+.tablink .act a:hover{
+   background-color: #fff;
+    color: #e01515;
+}
+
+#smaller ul{
+	padding-top: 150px;
+	padding-left:1px;
+	height:110%;
+	    width: 20%;
+	position: fixed;
+	top: -30px;
+
+	
+}
+#shift{
+	position:relative;
+	left:300px;
+}
+#shift2 {
+    width: 80%;
+    float: right;
+    position: relative;
+    text-align: center;
+    height: 100%;
+}
+.shiftless{
+	position:relative;
+	left:-185px;
+}
+#regions_div path {
+stroke-width:1.5; /* control the countries borders width */
+stroke:#f2f2f2; /* choose a color for the border */
+}
+.mapsub{
+	position: relative;
+	top: -40px;
+	left: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+	font-size: 20px;
+}
+.boxed{
+	padding: 3px 15px 3px 15px;
+	margin-right: 8px;
+	}
+#sblue{
+	background-color: #0052a5;
+}
+#sred{
+	background-color: #E0162B;
+}

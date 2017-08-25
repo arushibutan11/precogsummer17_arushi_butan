@@ -1,0 +1,100 @@
+<html>
+  <head>
+
+	
+	
+		<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+		
+		<link href="{{ url_for('static', filename='robotoslab.css') }}" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--Load the Ajax API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+	  
+  <div class= "tablink" id="smaller">
+	<ul id = "navi" class="navi">
+  <li class="act"><a href = "#1">Top 10 Hashtags</a></li>
+  <li><a href = "#2">Orignal Tweets, Retweets and Replies</a></li>
+  <li><a href ="#3">Type of Tweet</a></li>
+  <li><a href ="#4">Distribution of Favorite Count</a></li>
+<!--<li><a href ="#5">Location of Tweets</a></li> -->
+<li><a href ="#6">Who is more popular?</a></li>
+	</ul>
+	</div>
+
+     <script type="text/javascript">
+    function showHide(btn){   
+    $(btn).next('.showhide').toggle().siblings('.showhide').hide();
+}
+</script>
+		
+	
+	
+    <!--this is the div that will hold the pie chart-->
+	<div id ="shift2" >
+		<h1> US PRESIDENTIAL ELECTIONS: ANALYSIS </h1>
+    <div id="1" style="
+    margin-top: 100px;
+">
+		<h2 style="color: #022c3e;"> Top 10 Hashtags</h2>
+		<ul>
+			{% for items in arr %}
+				<li> {{ items }} </li>
+			{% endfor %}
+		</ul>
+		</div>
+	<div id="2" style="
+    margin-top: 100px;
+">
+		<h2 style="color: #022c3e;"> Orignal Tweets, Retweets and Replies</h2>
+		<p style="
+    text-align: center;
+">The chart below is a comparitive analysis of Orignal Tweets and the Retweets. </p>
+		 <img src="{{ url_for('static', filename='origrt.png') }}">
+			<p  style="
+    text-align: center;
+">It was observed that a significant number of tweets were replies as well. </p>
+				 <img src="{{ url_for('static', filename='origrtrp.png') }}">
+		</div>
+		<div id="3" style="
+    margin-top: 100px;
+"><h2 style="color: #022c3e;"> Type of Tweet</h2><p style="
+    text-align: center;
+"> Different types of tweets like Images, Videos and GIFs. All of them contained text. </p>
+				 <img src="{{ url_for('static', filename='typeoftweetbar.png') }}">
+			<p style="
+    text-align: center;
+"> Distribution of the type of tweet among Image, Video and GIF is as follows.</p>
+			<img src="{{ url_for('static', filename='typeoftweetpie.png') }}">
+</div>
+		<div id="4" style="
+    margin-top: 100px;
+">
+			<h2 style="color: #022c3e;"> Distribution of Favorite Count</h2>
+	<p style="
+    text-align: center;
+"> The following graph shows the favorite count of orignal tweets. The value for all of them is 0. ( since they were collected through the streaming API)   </p>
+			<img src="{{ url_for('static', filename='favcountOG.png') }}">
+							<p style="
+    text-align: center;
+"> However, the tweets which were retweeted had a significant amount of favorites on the orignal tweet.  </p>
+			<img src="{{ url_for('static', filename='favcountRT.png') }}">
+		</div>
+	
+		<div id="6" style="
+    margin-top: 100px;
+">
+				<h2 style="color: #022c3e;"> Who is more popular?</h2>
+			<p style="
+    text-align: center;
+"> Given below is an analysis of the popularity of the candidate on social media, which may either be positive or negative.  </p>
+				<img src="{{ url_for('static', filename='pop.png') }}">
+		<p>  </p>
+		</div>
+	</div>
+  </body>
+</html>

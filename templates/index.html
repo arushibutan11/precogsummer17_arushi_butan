@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>#Task1 | PRECOG</title>
+		<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+		<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+		<link href="{{ url_for('static', filename='robotoslab.css') }}" rel="stylesheet">
+		
+  </head>
+
+  <body>
+  
+
+	<div class="text-center" id ="headr">
+		<h1 class = "text-center">US PRESIDENTIAL ELECTIONS '16</h1>	
+		<a href="analysis" id="but">An Analysis</a>
+	</div>		
+    <div id = 'content'>
+			 <img src="{{ url_for('static', filename='world1.jpg') }}" width="60%" >
+	</div>
+	 <div id="Centred">
+	<div id="analysis">
+		<h2 id ="anhead" class = "text-center"> TASK(#1) FOR PRECOG: AN ANALYSIS OF US ELECTIONS '16 </h2>
+		<h3 id ="anhead" class = "text-center"> BY: Arushi Butan </h3>
+		<h4 id ="anhead" class = "text-center"> CSE Ungergraduate (Pre-Final Year), IGDTUW </h4>
+		<p> I have curated 10,000+ tweets by filtering the Twitter Stream for hashtags like #USelections, #Hillary and #Trump. 
+			The collected tweets were stored in my MongoDB collection. A copy of the database can ve viewed <a href="https://gitlab.com/arushibutan11/us-elections/">https://gitlab.com/arushibutan11/us-elections/ </a>. 
+			With the collected tweets, I have performed the aforementioned analysis: 
+			<ul>
+				<li> <a href="analysis#1"> The Top 10 Hashtags used in the stream </a> </li>
+				<li> <a href="analysis#2"> Distribution of Original Tweets, Retweets and Replies </a> </li>
+				<li> <a href="analysis#3"> Type of tweet (Text / Image / Video / GIF ) </a> </li>
+				<li> <a href="analysis#4"> Distribution of Favorite Count </a> </li>
+				<!-- <li> <a href="analysis#5"> Location of the Tweets on a Map </a> </li> -->
+				<li> <a href="analysis#6"> Who is more popular - Trump or Hillary? </a> </li>
+	</div>
+		 </div>
+	
+    <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='raphael.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='index.js') }}"></script>
+	
+    
+    
+  </body>
+</html>
